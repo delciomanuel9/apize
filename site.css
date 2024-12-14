@@ -1,0 +1,983 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+   background-color: white;
+    color: black;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    background: linear-gradient(blue, #0101fee8);
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logo{
+    display: none;
+
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.inter-logo img{
+    position: relative;
+    right: 70px;
+    border-radius: 5px;
+}
+.login-button{
+   
+    position: relative;
+    left: 140px;
+}
+
+.login-button button a{
+    text-decoration: none;
+}
+@media screen and (max-width: 730px) {
+    
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    ul li:hover{
+        background-color: rgba(234, 234, 255, 0.883);
+        color: #000;
+    }
+    ul li a{
+        padding: 10px 30px;
+    }
+    .nav-link{
+        text-decoration: none;
+        font-size: 1.15rem;
+        padding: 0px 20px;
+        color: white;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        left: 75px;
+        top: 10px;
+    }
+    .mobile-menu-icon button img{
+        width: 40px;
+        height: 40px;
+    }
+    .logo{
+        display: block;
+        position: relative;
+        left: 270px;
+        top: 11px;
+    }
+    .logo img{
+        position: relative;
+        left: -130px;
+        width: 30px;
+        height: 30px;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        padding: .8rem 6rem;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: flex;
+        padding: 1.2rem;
+    }
+
+    .mobile-menu .login-button{
+        display: flex;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 60%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        left: 60px;
+    }
+    .sobre-nos{
+        flex-direction: column;
+        color: white;
+        padding: 0px 1px ;
+    }
+    .open{
+        display: block;
+    }
+}
+
+/* parte da barra de pesquisa do projecto */
+
+.config button img{
+    display: none;
+}
+.config button{
+    display: none;
+}
+@media screen and (max-width: 730px) {
+
+    .config button img{
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: relative;
+        left: 90px;
+        top: 10px;
+    }
+    .config button{
+        border: none;
+        display: block;
+        background-color: transparent;
+    }
+    
+    
+    .interface{
+        display: flex;
+        position: relative;
+        top: 60px;
+        margin-bottom: 150px;
+        height: 400px;
+        
+    }
+}
+.inicio{
+    width: 100%;
+    height: 400px;
+    background-image: url(img/neon-city-futuristic-city-cyber-city-cyberpunk-cityscape-5k-3840x2160-8801.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inicio p, .inicio h2{
+    color: rgb(240, 240, 248);
+}
+.inicio button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: transparent;
+    position: absolute;
+    transition: .5s;
+    overflow: hidden;
+    margin-top: 150px;
+}
+.inicio button a{
+    text-decoration: none;
+    color: transparent;
+    transition: .5s;
+}
+.inicio button:hover{
+    width: 260px;
+    position: absolute;
+    background-color: #0015ff;
+    border: solid 1px white;
+    color: white;
+}
+.inicio button:hover a{
+    color: white;
+}
+.inicio img{
+    position: absolute;
+    margin-top: 150px;
+}
+
+
+
+.interface{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+    position: relative;
+    top: 30px;
+    overflow: hidden;
+}
+.title
+{
+    top: 32px;
+    display: block;
+    position: relative;
+}
+.title p span{
+    color: black;
+    font-size: 19px;
+    position: relative;
+    left: 140px;
+    transition: .5;
+    overflow: hidden;
+    animation: ponto 3s ease-in-out alternate forwards;
+}
+@keyframes ponto {
+    0%,20%{
+        left: 980px;
+        top: 0;
+    }
+    100%{
+        left: 0;
+        top: 0px;
+    }
+}
+.title p{
+    font-size: 14px;
+    top: 77px;
+    width: 160px;
+    position: relative;
+    color: #000;
+    transition: .5s;
+    animation: up 2s ease-in-out alternate forwards;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes up {
+    0%{
+        top: 77px;
+        right: 240px;
+        color: transparent;
+    }
+    100%{
+        top: 77px;
+        right: 0;
+        color: black;
+        font-weight: 700;
+    }
+}
+.title h1{
+    font-size: 84px;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    top: 70px;  
+}
+.barra
+{
+    border: solid 2px blue;
+    height: 58px;
+    width: 375px;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-top: transparent;
+    border-left: transparent;
+    transition: .5s;
+    animation: animate 1s ease-in-out alternate forwards;
+}
+
+@media screen and (max-width: 730px) {
+    .title h1{
+        font-size: 64px;
+        color: blue;
+        position: relative;
+        top: 70px;  
+    }
+    .barra{
+        width: 300px;
+    }
+}
+@keyframes animate {
+    0%{
+        top: 0px;
+        right: 0px;
+        position: relative;
+        border: solid 2px transparent;  
+    }
+    100%{
+        top: -70px;
+        right: 10px;
+        border-left: transparent;
+        border-top: transparent;
+    }
+}
+.trair{
+    position: relative;
+    height: 90px;
+    top: -20px;
+    display: flex;
+    animation: animate_1 2s ease-in-out alternate forwards;
+}
+@keyframes animate_1 {
+    0%{
+        width: 390px;
+        left: 0;
+        background: white;
+        display: flex;
+    }
+    100%{
+        background: white;
+        left: 330px; 
+    }
+}
+/* parte do projeto do site */
+.projeto{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #9595958c;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    bottom: 50px;
+   
+}
+.projeto h1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.box .u_l{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 6rem 1rem;
+}
+.box .u_l li{
+    width: 260px;
+    height: 270px;
+    border: solid 2px rgb(0, 4, 255);
+    background: linear-gradient(rgb(29, 29, 252), black);
+    display: block;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0px 30px;
+    transition: .5s;
+}
+.box .u_l li:hover{
+    height: 270px;
+    transform: scale(1.1);
+}
+.box .u_l li:hover img{
+    top: -70px;
+    scale: 0.50;
+}
+.box li img{
+    position: relative;
+    height: auto;
+    top: 0;
+    transition: .5s;
+    width: 180px;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position:relative;
+    top: 80px;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    color: white;
+    align-items: center;
+    transition: .5s;
+}
+.conteiner h3{
+    color: white;
+}
+.box .u_l li:hover .conteiner{
+    top: -100px;
+    height: 250px;
+    color: white;  
+}
+.conteiner p{
+    font-size: 12px;
+    color: white;
+}
+.link-projeto{
+    background-color: blue;
+    color: white;
+    width: 120px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+@media screen and (max-width: 730px){
+    .projeto{
+        width: 100%;
+        height: 1005px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        margin-bottom: 80px;
+    }
+    .projeto h1{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 2px;
+        font-size: 20px;
+    }
+    .box .u_l{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+    }
+    .box .u_l ul{
+        display: block;
+        padding: 20px 2px;
+        border-radius: 20px;
+    }
+
+    .box .u_l li{
+        width: 280px;
+        background: linear-gradient(rgb(4, 4, 255), #000);
+        height: 270px;
+        border: solid 2px rgb(4, 4, 255);
+        display: block;
+        border-radius: 10px;
+        justify-content: center;
+        position: relative;
+        transition: .5s;
+    }
+
+    .box li img{
+        position: relative;
+        height: auto;
+        top: 0;
+        transition: .5s;
+        width: 180px;
+    }
+}
+/* parte do projeto do site */
+#story{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#story .text-story{
+    padding: 10px 100px;
+    color: rgb(0, 0, 0);
+}
+.text-story p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text-story p span{
+    padding: 0px 5px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* parte dos projetos    */
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 15rem;
+}
+.link label span, p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.link label{
+    border: solid 2px rgb(4, 4, 255);
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+    border-top: transparent;
+    border-left: transparent;
+}
+
+.link .facebook:hover{
+    background: linear-gradient(-10deg, rgb(4, 4, 255), #6975fb);
+}
+.link .whatsapp:hover{
+    background: linear-gradient(-10deg, rgb(0, 255, 4), #04ff00c2);
+}
+.link .instagram:hover{
+    background: linear-gradient(30deg, rgb(220, 248, 2),red,rgb(248, 5, 74));
+}
+.story-redes ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 15rem ;
+    
+}
+.story-redes ul li{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.curso{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 5px 20px #202020c3;
+    border-radius: 5px;
+
+}
+.campo-curso ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    list-style: none;
+}
+.curso h1{
+    color: black;
+    display: flex;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.campo-curso li{
+    width: 280px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    box-shadow: 0px 5px 20px #00000086;
+}
+.campo-curso ul li a{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    justify-content: center;
+    transition: .5s;
+    align-items: center;
+}
+.campo-curso ul li:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 5px 20px rgba(0, 0, 13, 0.655);
+}
+
+/* background-color linear dos conteiner */
+
+#python:hover{
+    background: linear-gradient(290deg,yellow, blue);
+}
+#javascript:hover{
+    background-color: rgb(255, 221, 0);
+}
+#html:hover{
+    background-color: orangered; 
+}
+#ruby:hover{
+    background-color: rgba(255, 0, 0, 0.733);
+}
+#PHP:hover{
+    background-color: rgba(0, 0, 255, 0.502);
+}
+#css:hover{
+    background: linear-gradient(89deg,hsla(230, 100%, 49%, 0.818), #1f42f4);
+}
+#Java:hover{
+    background: linear-gradient(to bottom, rgb(209, 136, 0) 10% ,rgba(0, 0, 255, 0.452)50% );
+
+}
+
+@media screen and (max-width: 730px) {
+    .story-redes ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: .2rem 2rem ;
+    }
+    .campo-curso ul li a{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .campo-curso ul{
+        display: flex;
+        justify-content: space-between;
+        padding: .6rem 1rem;
+        list-style: none;
+    }
+    .campo-curso li{
+        width: 120px;
+        height: 120px;
+    }
+    .curso h1{
+        color: black;
+        display: flex;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        justify-content: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #story .text-story{
+        padding: 10px 30px;
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .link{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 4rem;
+    }
+}
+
+.interface_1{
+    padding: 80px 4%;
+    position: relative;
+    top: 80px;
+    background-color: transparent;
+    
+}
+form{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px #202020bf;
+    gap: 10px;
+    border-radius: 6px;
+    margin-top: 30px;
+    padding: 20px 20px 20px 20px;
+}
+h2{
+    margin-top: 10px 10px;
+    padding: 0px 10px;
+    font-size: 36px;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 span{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form input{
+    width: 65%;
+    background-color: #fffdfd;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    display: flex;
+    outline: none;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px 15px;
+    margin-top: -1px;
+    color: black;
+    font-size: 17px;
+}
+form input::placeholder{
+    color: blue;
+}
+form textarea{
+    resize: none;
+    width: 65%;
+    max-height: 400px;
+    background-color: #f1f1f1;
+    border: 0;
+    outline: 0;
+    padding: 30px 15px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    font-size: 18px;
+}
+form textarea::placeholder{
+    color: blue;
+}
+form textarea:hover{
+    border: solid rgb(4, 4, 255) 1px;
+    box-sizing: 0px 0px 0px #202020;    
+}
+form .btn-enviar{
+    margin-top: 10px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+form .btn-enviar a button{
+    width: 180px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    display: flex;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(42, 42, 192);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.redes-icones{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    top: 140px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 140px;
+    align-items: center;
+    justify-content: center;
+}
+.nome h3{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+.icones{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.redes-icones .icones button{
+    border: none;
+    border-radius: 60px;
+    background-color: transparent;
+    position: relative;
+    width: 60px;
+    color: white;
+    box-shadow: 0px 10px 15px #00000048;
+    height: 60px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1.5rem 1rem;
+    background-color: rgb(0, 0, 45);
+}
+.footer-inter{
+    display: flex;
+}
+.links p{
+    color: white;
+}
+.links li img{
+    background-color: white;
+    border-radius: 10px;
+}
+.footer-inter .links{
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+}
+.footer-inter .links li{
+    list-style: none;
+}
+.footer-inter .links a{
+    font-size: 12px;
+    color: white;
+}
+#rel{
+    width: 100%;
+    height: 560px;
+    background-color: rgb(0, 0, 45);
+    color: white;
+}
+.rect{
+    display: flex;
+    justify-content: center;
+}
+.br{
+    width: 900px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+#rel p{
+    display: flex;
+    justify-content: center;
+    color: white; 
+    position: relative;
+    top: 100px;
+}
+.chat-bot{
+    border: solid 1px #6975fb;
+    width: 600px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px #6975fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:20%;
+    top: 30px;
+    bottom: 30px;
+    animation: borde 2s alternate infinite;
+}
+@keyframes borde {
+    0%{
+        border: solid 1px #6975fb;
+        box-shadow: 0px 5px 20px #6975fb;
+    }
+    50%{
+        border: solid 1px #00ef2457;
+        box-shadow: 0px 5px 20px #00ef3c59;
+    }
+    100%{
+        border: solid 1px #0015ff;
+        box-shadow: 0px 5px 20px #0015ff;
+    }
+}
+.chat-bot img{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 45px; 
+}
+.bot h4{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    bottom: 30px;
+    height: 100px;
+}
+.btn-chat button{
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: #1f42f4;
+}
+#btn{
+    position: relative;
+    right: 20px;
+}
+#btn_1{
+    position: relative;
+    left: 20px;
+}
+@media screen and (max-width: 730px){
+    .footer-inter .links{
+        display: block;
+        padding: 1.5rem .8rem;
+    }
+    #rel{
+        width: 100%;
+        height: 590px;
+        background-color: rgb(0, 0, 45);
+        color: white;
+    }
+    .br{
+        width: 370px;
+        height: 4px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .chat-bot{
+        border: solid 1px #6975fb;
+        width: 280px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 20px #6975fb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 15%;
+        top: 30px;
+        bottom: 30px;
+    }
+    .chat-bot img{
+        background-color: white;
+        width: 80px;
+        height: 80px;
+        border-radius: 45px;
+        position: absolute;
+    }
+}
+
